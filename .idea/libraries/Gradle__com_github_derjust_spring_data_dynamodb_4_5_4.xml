@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.derjust:spring-data-dynamodb:4.5.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.derjust/spring-data-dynamodb/4.5.4/3c96651ec2abd1a2fbbaf6e8d189dfd5757437ea/spring-data-dynamodb-4.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.derjust/spring-data-dynamodb/4.5.4/e886033429ffbad7bf8d8ee61875d099ca7e6b86/spring-data-dynamodb-4.5.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

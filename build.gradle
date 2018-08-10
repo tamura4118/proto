@@ -1,0 +1,47 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.9.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('com.amazonaws:aws-lambda-java-core:1.1.0')
+    compile('org.projectlombok:lombok:1.16.8')
+    compile group: 'com.github.derjust', name: 'spring-data-dynamodb', version: '4.5.4'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+task stage {
+    dependsOn build
+}
+configurations {
+    providedRuntime
+}
+jar {
+    baseName = 'chavot'
+    version = '0.1.0'
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+}
+springBoot {
+    executable = true
+}
+
+bootRun {
+    environment = ["FB_TOKEN": "[PATH TO JSON]" ]
+}
