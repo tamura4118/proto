@@ -1,7 +1,7 @@
-version: 1.0.1
+version: 0.2
 os: linux
 files:
-  - source: proto-0.1.0.jar
+  - source: ./build/libs/proto-0.1.0.jar
     destination: /
     overwrite: yes
 hooks:
