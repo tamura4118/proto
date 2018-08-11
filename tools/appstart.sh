@@ -1,3 +1,3 @@
 #! /bin/bash
-java -jar proto-0.1.0.jar &
+java -jar /home/ec2-user/proto-0.1.0.jar &
 echo "hello!"
