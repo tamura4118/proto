@@ -16,6 +16,6 @@ public class TestProtoRepository {
     @Test
     public void findByTest() {
         assertThat(protoRepository.findBy("proto")).isEqualTo("OK");
-        assertThat(protoRepository.findBy("proto2")).isEqualTo("NG");
+        assertThat(protoRepository.findBy("proto2")).isEqualTo("N");
     }
 }
