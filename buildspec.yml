@@ -8,4 +8,5 @@ phases:
 artifacts:
   files:
     - ./build/libs/proto-0.1.0.jar
+    - ./tools/appstart.sh
     - appspec.yml
