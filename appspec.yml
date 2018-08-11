@@ -6,4 +6,4 @@ files:
     overwrite: yes
 hooks:
   ApplicationStart:
-    - location: appstart.sh
+    - location: ./tools/appstart.sh
