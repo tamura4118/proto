@@ -34,7 +34,7 @@ configurations {
     providedRuntime
 }
 jar {
-    baseName = 'chavot'
+    baseName = 'proto'
     version = '0.1.0'
     from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }

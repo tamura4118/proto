@@ -1,0 +1,8 @@
+phases:
+  build:
+    commands:
+      - gradle build -x test
+
+artifacts:
+  files:
+    - ./build/libs/proto-0.1.0.jar
