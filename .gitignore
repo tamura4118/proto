@@ -1,2 +1,5 @@
 build
 out
+.gradle
+.idea
+.gradle/3.5-rc-2/fileContent/fileContent.lock
