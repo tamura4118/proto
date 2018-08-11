@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.3
 
 phases:
   build:
@@ -8,3 +8,4 @@ phases:
 artifacts:
   files:
     - ./build/libs/proto-0.1.0.jar
+    - appspec.yml
